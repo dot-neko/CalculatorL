@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/operation"
@@ -42,14 +43,15 @@
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result" />
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:text="0"
+        android:text="@string/textValue_0"
         app:layout_constraintStart_toStartOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
@@ -58,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:text="1"
+        android:text="@string/textValue_1"
         app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -68,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="2"
+        android:text="@string/textValue_2"
         app:layout_constraintBaseline_toBaselineOf="@+id/button1"
         app:layout_constraintStart_toEndOf="@+id/button1" />
 
@@ -78,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="3"
+        android:text="@string/textValue_3"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         app:layout_constraintStart_toEndOf="@+id/button2" />
 
@@ -87,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:text="4"
+        android:text="@string/textValue_4"
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
@@ -97,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="5"
+        android:text="@string/textValue_5"
         app:layout_constraintBaseline_toBaselineOf="@+id/button4"
         app:layout_constraintStart_toEndOf="@+id/button4" />
 
@@ -107,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="6"
+        android:text="@string/textValue_6"
         app:layout_constraintBaseline_toBaselineOf="@+id/button5"
         app:layout_constraintStart_toEndOf="@+id/button5" />
 
@@ -117,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:minWidth="48dp"
-        android:text="7"
+        android:text="@string/textValue_7"
         app:layout_constraintStart_toStartOf="@+id/newNumber"
         app:layout_constraintTop_toBottomOf="@+id/newNumber" />
 
@@ -127,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="8"
+        android:text="@string/textValue_8"
         app:layout_constraintBaseline_toBaselineOf="@+id/button7"
         app:layout_constraintStart_toEndOf="@+id/button7" />
 
@@ -137,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="9"
+        android:text="@string/textValue_9"
         app:layout_constraintBaseline_toBaselineOf="@+id/button8"
         app:layout_constraintStart_toEndOf="@+id/button8" />
 
@@ -147,7 +149,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="-"
+        android:text="@string/textValueMinus"
         app:layout_constraintBaseline_toBaselineOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button3" />
 
@@ -157,7 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="="
+        android:text="@string/textValueEquals"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonDec"
         app:layout_constraintStart_toEndOf="@+id/buttonDec" />
 
@@ -167,7 +169,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="+"
+        android:text="@string/textValuePlus"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonEq"
         app:layout_constraintStart_toEndOf="@+id/buttonEq" />
 
@@ -177,7 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="/"
+        android:text="@string/textValueDivider"
         app:layout_constraintBaseline_toBaselineOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@+id/button9" />
 
@@ -187,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="*"
+        android:text="@string/textValueMultiplier"
         app:layout_constraintBaseline_toBaselineOf="@+id/button6"
         app:layout_constraintStart_toEndOf="@+id/button6" />
 
@@ -197,7 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
-        android:text="."
+        android:text="@string/textValueDecimal"
         app:layout_constraintBaseline_toBaselineOf="@+id/button0"
         app:layout_constraintStart_toEndOf="@+id/button0" />
 

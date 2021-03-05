@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">CalculatorL</string>
+    <string name="textValueMinus">-</string>
+    <string name="textValueDecimal">.</string>
+    <string name="textValue_0">0</string>
+    <string name="textValue_8">8</string>
+    <string name="textValueMultiplier">*</string>
+    <string name="textValue_1">1</string>
+    <string name="textValue_2">2</string>
+    <string name="textValueDivider">/</string>
+    <string name="textValue_3">3</string>
+    <string name="textValue_5">5</string>
+    <string name="textValue_4">4</string>
+    <string name="textValue_6">6</string>
+    <string name="textValue_7">7</string>
+    <string name="textValue_9">9</string>
+    <string name="textValueEquals">=</string>
+    <string name="textValuePlus">+</string>
 </resources>
